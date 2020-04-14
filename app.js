@@ -14,6 +14,8 @@ var app = express();
 // Set up mongoose connection
 var mongoose = require('mongoose');
 // replace the following url with your db server url on Atlas, as you created already 2 weeks ago.
+var debv_db_url = 'mongodb+srv://kzialcita:<teamavatarrocks>@cluster0-1vjsb.mongodb.net/test?retryWrites=true&w=majority
+';
 //var dev_db_url = 'mongodb+srv://rnezami:Zanjan42@cluster0-otyvn.mongodb.net/Local_Library?retryWrites=true&w=majority'
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
